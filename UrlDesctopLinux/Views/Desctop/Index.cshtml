@@ -1,0 +1,37 @@
+﻿@using UrlDesctopLinux
+@using UrlDesctopLinux.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model Folder
+@{
+}
+
+<html>
+    <head></head>
+    <body>
+        <h1>@Model.PathFile</h1>
+        @if (Model.Files != null)
+        {
+            <ul>
+                @foreach (var element in Model.Files)
+                {
+                    <li><a class="Files" href="@element">@element</a></li>
+                }
+            </ul>
+
+            <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" /><br>
+                <input type="submit" value="Загрузить" />
+            </form>
+        }
+        else if (Model.IsImage)
+        {
+        <img src="~/CopyFiles/@Model.ImageFileName" style="max-height:100%; max-width:100%;" />
+        }
+        else
+        {
+            <pre>@Model.TextFile</pre>
+        }
+    </body>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</html>

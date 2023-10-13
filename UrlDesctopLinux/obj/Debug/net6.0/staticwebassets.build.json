@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "oqaDNC6lr1IXwvcHYjATfRMU3wJDUOs5hAyOc7+mjHs=",
+  "Source": "UrlDesctopLinux",
+  "BasePath": "_content/UrlDesctopLinux",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UrlDesctopLinux\\wwwroot",
+      "Source": "UrlDesctopLinux",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "BasePath": "_content/UrlDesctopLinux",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\1474431032_Csz-LfoUIAE_mab.jpg",
+      "SourceId": "UrlDesctopLinux",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "BasePath": "_content/UrlDesctopLinux",
+      "RelativePath": "CopyFiles/1474431032_Csz-LfoUIAE_mab.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CopyFiles\\1474431032_Csz-LfoUIAE_mab.jpg"
+    },
+    {
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\js\\site.js",
+      "SourceId": "UrlDesctopLinux",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "BasePath": "_content/UrlDesctopLinux",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}
