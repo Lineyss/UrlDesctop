@@ -1,3 +1,5 @@
+using System.Net;
+
 namespace UrlDesctopLinux
 {
     public class Program
@@ -7,6 +9,30 @@ namespace UrlDesctopLinux
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
+
+            builder.Services.AddHsts(options =>
+            {
+                options.Preload = true;
+                options.IncludeSubDomains = true;
+                options.MaxAge = TimeSpan.FromDays(60);
+                options.ExcludedHosts.Add("example.com");
+                options.ExcludedHosts.Add("www.example.com");
+            });
+
+            builder.Services.AddHttpsRedirection(options =>
+            {
+                options.RedirectStatusCode = (int)HttpStatusCode.TemporaryRedirect;
+                options.HttpsPort = 5001;
+            });
+
+            if (!builder.Environment.IsDevelopment())
+            {
+                builder.Services.AddHttpsRedirection(options =>
+                {
+                    options.RedirectStatusCode = (int)HttpStatusCode.PermanentRedirect;
+                    options.HttpsPort = 443;
+                });
+            }
 
             // Add services to the container.
 

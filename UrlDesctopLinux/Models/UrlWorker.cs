@@ -35,6 +35,12 @@ namespace UrlDesctopLinux.Models
                 return "/";
             }
             currentUrl = string.Join("/",array); 
+
+            if(Path.HasExtension(currentUrl))
+            {
+                return $"/{currentUrl}";
+            }
+
             return $"/{currentUrl}/";
         }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oqaDNC6lr1IXwvcHYjATfRMU3wJDUOs5hAyOc7+mjHs=",
+  "Hash": "340s7l2SVbRMsEAWNhuIQgk9XZ6v/IXFfhBFQXwyGUw=",
   "Source": "UrlDesctopLinux",
   "BasePath": "_content/UrlDesctopLinux",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\1474431032_Csz-LfoUIAE_mab.jpg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\02076514-4e92-469a-b382-eb5768db3a21.gif",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
-      "RelativePath": "CopyFiles/1474431032_Csz-LfoUIAE_mab.jpg",
+      "RelativePath": "CopyFiles/02076514-4e92-469a-b382-eb5768db3a21.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\CopyFiles\\1474431032_Csz-LfoUIAE_mab.jpg"
+      "OriginalItemSpec": "wwwroot\\CopyFiles\\02076514-4e92-469a-b382-eb5768db3a21.gif"
     },
     {
       "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\js\\site.js",

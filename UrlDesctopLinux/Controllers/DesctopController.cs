@@ -10,6 +10,7 @@ namespace UrlDesctopLinux.Controllers
     public class DesctopController : Controller
     {
         private readonly ILogger<DesctopController> logger;
+        private readonly bool IsUnix = Environment.OSVersion.VersionString.Split(" ")[0] == "Unix";
         public DesctopController(ILogger<DesctopController> _logger)
         {
             logger = _logger;
@@ -35,7 +36,14 @@ namespace UrlDesctopLinux.Controllers
                 }
 
                 string path = urlWorker.GetUrl();
-                path += $"\\{file.FileName}";
+                if (IsUnix)
+                {
+                    path += file.FileName;
+                }
+                else
+                {
+                    path += $"\\{file.FileName}";
+                }
                 using(var stream = new FileStream(path,FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
