@@ -33,5 +33,8 @@
             <pre>@Model.TextFile</pre>
         }
     </body>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    @if (!Model.IsUnix)
+    {
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    }
 </html>

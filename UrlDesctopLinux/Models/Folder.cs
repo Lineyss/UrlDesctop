@@ -13,7 +13,7 @@ namespace UrlDesctopLinux.Models
         public string TextFile { get; set; }
         public List<string>? Files { get; set; } = null;
 
-        private readonly bool IsUnix = Environment.OSVersion.VersionString.Split(" ")[0] == "Unix";
+        public readonly bool IsUnix = Environment.OSVersion.VersionString.Split(" ")[0] == "Unix";
 
         public Folder(string url)
         {

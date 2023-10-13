@@ -5,8 +5,11 @@
 
 document.querySelectorAll(".Files").forEach(element => {
     element.addEventListener("click", (e) => {
-        e.preventDefault();
-        let a = 'https://localhost:7126/' + element.textContent;
-        window.location.href = a;
+        if (navigator.appVersion.indexOf("Win") != -1)
+        {
+            e.preventDefault();
+            let a = 'https://localhost:7126/' + element.textContent;
+            window.location.href = a;
+        }
     });
 })
