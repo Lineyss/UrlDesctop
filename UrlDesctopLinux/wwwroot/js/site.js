@@ -4,12 +4,36 @@
 // Write your JavaScript code.
 
 
+function Href(url) {
+    let a = 'https://localhost:7126/' + url;
+    window.location.href = a;
+}
+
 document.querySelectorAll(".Files").forEach(element => {
     element.addEventListener("click", (e) => {
         if (navigator.platform.indexOf("Win") != -1)
         {
-            let a = 'https://localhost:7126/' + element.getAttribute("href");
-            window.location.href = a;
+            e.preventDefault();
+            Href(element.getAttribute("href")); 
         }
     });
 })
+
+let button = document.querySelector(".buttonSearch");
+let input = document.querySelector(".inputSearch");
+
+button.addEventListener("click", () => {
+    let text = input.value;
+    if (navigator.platform.indexOf("Win") != -1) {
+        Href(text);
+    }
+    else {
+        window.location.href = text;
+    }
+});
+
+input.addEventListener("keyup", (e) => {
+    if (e.keyCode == 13) {
+        button.click();
+    }
+});

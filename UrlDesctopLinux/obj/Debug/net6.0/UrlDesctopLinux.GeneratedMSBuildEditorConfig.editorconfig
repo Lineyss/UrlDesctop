@@ -5,17 +5,16 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UrlDesctopLinux
 build_property.RootNamespace = UrlDesctopLinux
-build_property.ProjectDir = D:\project\Шарпы\LinuxProject\UrlDesctopLinux\UrlDesctopLinux\
+build_property.ProjectDir = D:\Project\c шарп\UrlDesctop\UrlDesctopLinux\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\project\Шарпы\LinuxProject\UrlDesctopLinux\UrlDesctopLinux
+build_property.MSBuildProjectDirectory = D:\Project\c шарп\UrlDesctop\UrlDesctopLinux
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/project/Шарпы/LinuxProject/UrlDesctopLinux/UrlDesctopLinux/Views/Desctop/Index.cshtml]
+[D:/Project/c шарп/UrlDesctop/UrlDesctopLinux/Views/Desctop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzY3RvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

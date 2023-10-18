@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "AFh+u0dWYgwfMeIoUVlsHAZnv3W1h5I9iu2G9/26GwLvF+Dvka397YTgKBd7+5vSwW/2kmUItnH7Au+ZnPsFCA==",
+  "dgSpecHash": "wRmETp8rRF8oih1NVpUF86wzTPKQVffMa475h02Jgw6hb1WlEZ33P6Bbwf5T7QRN1zSypE1f/fQ7AOPvBj2QFw==",
   "success": true,
-  "projectFilePath": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\UrlDesctopLinux.csproj",
+  "projectFilePath": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\UrlDesctopLinux.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sasch\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
-    "C:\\Users\\sasch\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+    "C:\\Users\\Павел\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Павел\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

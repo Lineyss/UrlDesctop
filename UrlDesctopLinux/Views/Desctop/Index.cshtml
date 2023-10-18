@@ -17,43 +17,56 @@
     <header>
         <div class="headerPanel">
             <div class="inputBlock">
-                <button>Поиск</button>
-                <input type="text" placeholder="Путь" value="@Model.PathFile"/>
+                <button class="buttonSearch">Поиск</button>
+                <input type="text" placeholder="Путь" value="@Model.PathFile" class="inputSearch"/>
             </div>
         </div>
         <div class="headerPanel">
             <div class="buttonsPanel">
-                <button>Создать папку</button>
-                <button>Загрузить</button>
-                <button disabled>Скачать папку</button>
+                @if(@Model.IsFoler)
+                {
+                    <button>Создать папку</button>
+                    <button>Загрузить</button>   
+                }
+                <button disabled>Скачать</button>
                 <button disabled>Удалить</button>
             </div>
             <button>Войти</button>
         </div>
     </header>
     <div class="conteinerContent">
-        <div class="body">
-            @foreach (var element in @Model.Files)
+            @if(Model.IsFoler)
             {
-            <div class="element">
-                <div class="elementBlock">
-                    <input type="checkbox" />
+                <div class="body">
+                @foreach (var element in Model.Files)
+                {
+                    <div class="element">
+                        <div class="elementBlock">
+                            <input type="checkbox" />
+                        </div>
+                        <hr width="1" size="35" />
+                        <div class="elementBlock">
+                            <img src="@element.PathToImage" />
+                        </div>
+                        <hr width="1" size="35" />
+                        <div class="path">
+                            <a href="@element.FilePath" class="Files">
+                                <b>@element.FileName</b>
+                            </a>
+                        </div>
+                        <hr width="1" size="35" />
+                        <div class="description">
+                            Время создания: @element.CreateTime
+                        </div>
+                    </div>
+                }
                 </div>
-                <hr width="1" size="35" />
-                <div class="elementBlock">
-                    <img src="~/image/folder.svg" />
+            }
+            else if(Model.IsImage)
+            {
+                <div class="body bodyImage">
+                    <img class="imageFile" src="~/CopyFiles/@Model.ImageFileName" />
                 </div>
-                <hr width="1" size="35" />
-                <div class="path">
-                    <a href="@element.FilePath" class="Files">
-                        <b>@element.FileName</b>
-                    </a>
-                </div>
-                <hr width="1" size="35" />
-                <div class="description">
-                    Время создания: @element.CreateTime
-                </div>
-            </div>
             }
         </div>
     </div>

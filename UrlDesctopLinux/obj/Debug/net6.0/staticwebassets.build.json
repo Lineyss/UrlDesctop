@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wzKv8if/5ObqCxTjgifTTIxOH6iTsEUN/YRnqr+ji74=",
+  "Hash": "pV6uiSAid335z458sMwDDWbpQa5agmlsgKZQW9fEX6w=",
   "Source": "UrlDesctopLinux",
   "BasePath": "_content/UrlDesctopLinux",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "UrlDesctopLinux\\wwwroot",
       "Source": "UrlDesctopLinux",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\folder.svg",
+      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\CopyFiles\\UserLogo.jpg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
-      "RelativePath": "CopyFiles/folder.svg",
+      "RelativePath": "CopyFiles/UserLogo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\CopyFiles\\folder.svg"
+      "OriginalItemSpec": "wwwroot\\CopyFiles\\UserLogo.jpg"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\css\\index.css",
+      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\css\\index.css",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
+      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "image/files.svg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\image\\files.svg"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\image\\folder.svg",
+      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\image\\folder.svg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "image/folder.svg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\image\\folder.svg"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\js\\site.js",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

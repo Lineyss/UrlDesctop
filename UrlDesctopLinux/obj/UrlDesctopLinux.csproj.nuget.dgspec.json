@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\UrlDesctopLinux.csproj": {}
+    "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\UrlDesctopLinux.csproj": {}
   },
   "projects": {
-    "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\UrlDesctopLinux.csproj": {
+    "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\UrlDesctopLinux.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\UrlDesctopLinux.csproj",
+        "projectUniqueName": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\UrlDesctopLinux.csproj",
         "projectName": "UrlDesctopLinux",
-        "projectPath": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\UrlDesctopLinux.csproj",
-        "packagesPath": "C:\\Users\\sasch\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\obj\\",
+        "projectPath": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\UrlDesctopLinux.csproj",
+        "packagesPath": "C:\\Users\\Павел\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\System\\VisualStudioSDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sasch\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Павел\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,8 +51,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

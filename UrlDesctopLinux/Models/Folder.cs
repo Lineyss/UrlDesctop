@@ -9,7 +9,8 @@ namespace UrlDesctopLinux.Models
     {
         public string PathFile { get; set; }
         public string ImageFileName { get; set; }
-        public bool IsImage { get; set; } = false;
+        public bool IsFoler { get; set; } = true;
+        public bool IsImage { get; set; }
         public string TextFile { get; set; }
         public List<FileModel> Files { get; set; } = new List<FileModel>();
 
@@ -20,7 +21,8 @@ namespace UrlDesctopLinux.Models
             PathFile = url;
             if(!GetFiles())
             {
-                if(!GetImage())
+                IsFoler = false;
+                if (!GetImage())
                 {
                     GetTextInFile();
                 }
@@ -66,7 +68,7 @@ namespace UrlDesctopLinux.Models
                 if (exeption == ".png" || exeption == ".web" || exeption == ".jpg" || exeption == ".gif" || exeption == ".svg")
                 {
                     IsImage = true;
-                    CopyFile(PathFile);
+                    CopyFile();
                     return true;
                 }
 
@@ -90,9 +92,9 @@ namespace UrlDesctopLinux.Models
             }
         }
 
-        private void CopyFile(string url)
+        private void CopyFile()
         {
-            ImageFileName = Path.GetFileName(url);
+            ImageFileName = Path.GetFileName(PathFile);
 
             string[] ImageFiles = Directory.GetFiles(Directory.GetCurrentDirectory() + $@"\wwwroot\CopyFiles\");
 
@@ -107,7 +109,7 @@ namespace UrlDesctopLinux.Models
             string pathToImageDirectory = Directory.GetCurrentDirectory() +  $@"\wwwroot\CopyFiles\{ImageFileName}";
 
 
-            FileInfo fileInfo = new FileInfo(url);
+            FileInfo fileInfo = new FileInfo(PathFile);
             fileInfo.CopyTo(pathToImageDirectory);
         }
     }

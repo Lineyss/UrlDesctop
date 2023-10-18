@@ -13,8 +13,22 @@ namespace UrlDesctopLinux.Models
         {
             FilePath = pathToFile;
             FileName = Path.GetFileName(pathToFile);
-            PathToImage = Path.HasExtension(pathToFile)? "/image/folder.svg" : "/image/files.svg";
+
+            IsFoler();
+
             CreateTime = File.GetCreationTime(pathToFile);
+        }
+
+        private void IsFoler()
+        {
+            if ((File.GetAttributes(FilePath) & FileAttributes.Directory) == FileAttributes.Directory)
+            {
+                PathToImage = "/image/folder.svg";
+            }
+            else
+            {
+                PathToImage = "/image/files.svg";
+            }
         }
     }
 }

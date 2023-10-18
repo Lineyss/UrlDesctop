@@ -21,7 +21,7 @@ namespace UrlDesctopLinux.Models
             var array = RemoveUslessWords();
             if (array[0] == "")
             {
-                array[0] = "C:";
+                array[0] = "C:/";
             }
             return string.Join("/", array);
         }
