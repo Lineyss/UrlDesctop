@@ -28,8 +28,8 @@
                     <button>Создать папку</button>
                     <button>Загрузить</button>   
                 }
-                <button disabled>Скачать</button>
-                <button disabled>Удалить</button>
+                <button disabled class="disabledButton">Скачать</button>
+                <button disabled class="disabledButton">Удалить</button>
             </div>
             <button>Войти</button>
         </div>
@@ -66,9 +66,14 @@
             {
                 <div class="body bodyImage">
                     <img class="imageFile" src="~/CopyFiles/@Model.ImageFileName" />
-                </div>
-            }
-        </div>
+            </div>
+        }
+        else
+        {
+            <div class="body">
+                <p style="width:99%;">@Model.TextFile</p>
+            </div>
+        }
     </div>
 </body>
     <script src="~/js/site.js" asp-append-version="true"></script>

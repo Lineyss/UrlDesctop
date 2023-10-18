@@ -102,6 +102,7 @@ header > button {
     padding-left: 20px;
     padding-bottom: 20px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .bodyImage
@@ -111,19 +112,19 @@ header > button {
 
 .body::-webkit-scrollbar 
 {
-        width: 10px;
+    width: 10px;
 }
 
 .body::-webkit-scrollbar-track 
 {
-        border-radius: 10px;
-        margin-top: 27px;
-        margin-bottom: 27px;
+    border-radius: 10px;
+    margin-top: 27px;
+    margin-bottom: 27px;
 }
 
 .body::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background: #8a2be2;
+    border-radius: 10px;
+    background: #8a2be2;
 }
 
 .buttonsPanel {
