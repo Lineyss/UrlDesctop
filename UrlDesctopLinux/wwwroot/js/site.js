@@ -37,12 +37,3 @@ input.addEventListener("keyup", (e) => {
         button.click();
     }
 });
-
-
-
-function ChangeDisableButton(Disable)
-{
-    document.querySelectorAll(".disabledButton").forEach(element => {
-        element.disabled = Disable;
-    })
-}

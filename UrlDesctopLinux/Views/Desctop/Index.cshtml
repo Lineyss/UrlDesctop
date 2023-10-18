@@ -1,4 +1,4 @@
-﻿@using UrlDesctopLinux
+﻿﻿@using UrlDesctopLinux
 @using UrlDesctopLinux.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
@@ -66,14 +66,14 @@
             {
                 <div class="body bodyImage">
                     <img class="imageFile" src="~/CopyFiles/@Model.ImageFileName" />
-            </div>
-        }
-        else
-        {
-            <div class="body">
-                <p style="width:99%;">@Model.TextFile</p>
-            </div>
-        }
+                </div>
+            }
+            else
+            {
+                <div class="body">
+                    <p style="width:99%; ">@Model.TextFile</p>
+                </div>
+            }
     </div>
 </body>
     <script src="~/js/site.js" asp-append-version="true"></script>

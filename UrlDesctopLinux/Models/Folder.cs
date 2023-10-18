@@ -23,8 +23,8 @@ namespace UrlDesctopLinux.Models
             {
                 IsFoler = false;
                 if (!GetImage())
-                {
-                    GetTextInFile();
+                {      
+                    GetTextInFileAsync();
                 }
             }
         }
@@ -80,11 +80,13 @@ namespace UrlDesctopLinux.Models
             }
         }
 
-        private void GetTextInFile()
+        private async void GetTextInFileAsync()
         {
             try
             {
-                TextFile = File.ReadAllText(PathFile);
+                FileReader reader = new FileReader(PathFile);
+
+                TextFile = reader.Read();
             }
             catch
             {
