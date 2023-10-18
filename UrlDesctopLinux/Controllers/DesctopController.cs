@@ -10,7 +10,6 @@ namespace UrlDesctopLinux.Controllers
     public class DesctopController : Controller
     {
         private readonly ILogger<DesctopController> logger;
-        private readonly bool IsUnix = Environment.OSVersion.VersionString.Split(" ")[0] == "Unix";
         public DesctopController(ILogger<DesctopController> _logger)
         {
             logger = _logger;
@@ -23,7 +22,7 @@ namespace UrlDesctopLinux.Controllers
             logger.LogInformation($"Зашли в {DateTime.Now} по пути: {path}");
             return View(new Folder(path));
         }
-        [HttpPost]
+        [HttpPost] 
         public async Task<IActionResult> Index (IFormFile file)
         {
             try
@@ -36,7 +35,7 @@ namespace UrlDesctopLinux.Controllers
                 }
 
                 string path = urlWorker.GetUrl();
-                if (IsUnix)
+                if (Folder.IsUnix)
                 {
                     path += file.FileName;
                 }

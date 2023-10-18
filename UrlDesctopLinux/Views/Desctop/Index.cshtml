@@ -6,35 +6,57 @@
 @{
 }
 
-<html>
-    <head></head>
-    <body>
-        <h1>@Model.PathFile</h1>
-        @if (Model.Files != null)
-        {
-            <ul>
-                @foreach (var element in Model.Files)
-                {
-                    <li><a class="Files" href="@element">@element</a></li>
-                }
-            </ul>
-
-            <form method="post" enctype="multipart/form-data">
-            <input type="file" name="file" /><br>
-                <input type="submit" value="Загрузить" />
-            </form>
-        }
-        else if (Model.IsImage)
-        {
-        <img src="~/CopyFiles/@Model.ImageFileName" style="max-height:100%; max-width:100%;" />
-        }
-        else
-        {
-            <pre>@Model.TextFile</pre>
-        }
-    </body>
-    @if (!Model.IsUnix)
-    {
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="~/css/index.css" />
+    <title>Файловая система</title>
+</head>
+<body>
+    <header>
+        <div class="headerPanel">
+            <div class="inputBlock">
+                <button>Поиск</button>
+                <input type="text" placeholder="Путь" value="@Model.PathFile"/>
+            </div>
+        </div>
+        <div class="headerPanel">
+            <div class="buttonsPanel">
+                <button>Создать папку</button>
+                <button>Загрузить</button>
+                <button disabled>Скачать папку</button>
+                <button disabled>Удалить</button>
+            </div>
+            <button>Войти</button>
+        </div>
+    </header>
+    <div class="conteinerContent">
+        <div class="body">
+            @foreach (var element in @Model.Files)
+            {
+            <div class="element">
+                <div class="elementBlock">
+                    <input type="checkbox" />
+                </div>
+                <hr width="1" size="35" />
+                <div class="elementBlock">
+                    <img src="~/image/folder.svg" />
+                </div>
+                <hr width="1" size="35" />
+                <div class="path">
+                    <a href="@element.FilePath" class="Files">
+                        <b>@element.FileName</b>
+                    </a>
+                </div>
+                <hr width="1" size="35" />
+                <div class="description">
+                    Время создания: @element.CreateTime
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</body>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </html>

@@ -3,12 +3,12 @@
 
 // Write your JavaScript code.
 
+
 document.querySelectorAll(".Files").forEach(element => {
     element.addEventListener("click", (e) => {
-        if (navigator.appVersion.indexOf("Win") != -1)
+        if (navigator.platform.indexOf("Win") != -1)
         {
-            e.preventDefault();
-            let a = 'https://localhost:7126/' + element.textContent;
+            let a = 'https://localhost:7126/' + element.getAttribute("href");
             window.location.href = a;
         }
     });

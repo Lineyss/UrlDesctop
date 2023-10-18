@@ -5,7 +5,6 @@ namespace UrlDesctopLinux.Models
 {
     public class UrlWorker
     {
-        private bool IsUnix = Environment.OSVersion.VersionString.Split(" ")[0] == "Unix";
         private string currentUrl;
         public UrlWorker(string Url)
         {
@@ -14,7 +13,7 @@ namespace UrlDesctopLinux.Models
 
         public string GetUrl()
         {
-            return IsUnix ? GetUrlLinux() : GetUrlWindows();
+            return Folder.IsUnix ? GetUrlLinux() : GetUrlWindows();
         }
 
         private string GetUrlWindows()

@@ -1,8 +1,20 @@
 {
   "Files": [
     {
-      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\02076514-4e92-469a-b382-eb5768db3a21.gif",
-      "PackagePath": "staticwebassets\\CopyFiles\\02076514-4e92-469a-b382-eb5768db3a21.gif"
+      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\folder.svg",
+      "PackagePath": "staticwebassets\\CopyFiles\\folder.svg"
+    },
+    {
+      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
+      "PackagePath": "staticwebassets\\image\\files.svg"
+    },
+    {
+      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\image\\folder.svg",
+      "PackagePath": "staticwebassets\\image\\folder.svg"
     },
     {
       "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDesctopLinux\\UrlDesctopLinux\\wwwroot\\js\\site.js",

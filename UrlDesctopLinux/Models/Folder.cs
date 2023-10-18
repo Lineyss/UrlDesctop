@@ -11,9 +11,9 @@ namespace UrlDesctopLinux.Models
         public string ImageFileName { get; set; }
         public bool IsImage { get; set; } = false;
         public string TextFile { get; set; }
-        public List<string>? Files { get; set; } = null;
+        public List<FileModel> Files { get; set; } = new List<FileModel>();
 
-        public readonly bool IsUnix = Environment.OSVersion.VersionString.Split(" ")[0] == "Unix";
+        public static readonly bool IsUnix = Environment.OSVersion.VersionString.Split(" ")[0] == "Unix";
 
         public Folder(string url)
         {
@@ -31,14 +31,21 @@ namespace UrlDesctopLinux.Models
         {
             try
             {
-                Files = Directory.GetDirectories(PathFile).ToList();
-                Files = Files.Concat(Directory.GetFiles(PathFile)).ToList();
+                foreach(var element in Directory.GetDirectories(PathFile))
+                {
+                    Files.Add(new FileModel(element));
+                }
 
-                if(IsUnix)
+                foreach (var element in Directory.GetFiles(PathFile))
+                {
+                    Files.Add(new FileModel(element));
+                }
+
+                if (IsUnix)
                 {
                     for(int i = 0;i< Files.Count;i++)
                     {
-                        Files[i] = Files[i][1..];
+                        /*Files[i] = Files[i][1..];*/
                     }
                 }
 
