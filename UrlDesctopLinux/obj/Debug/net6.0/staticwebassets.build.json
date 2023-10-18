@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M5UZPUAtQH6ZekvGrrSqOqhScwX3JMZLmMliWIDPr3k=",
+  "Hash": "b0GF32FQmKtf6nvyekjygQE/lyLPlTgnKFivTjwbvH4=",
   "Source": "UrlDesctopLinux",
   "BasePath": "_content/UrlDesctopLinux",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "UrlDesctopLinux\\wwwroot",
       "Source": "UrlDesctopLinux",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\CopyFiles\\arrow.svg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\arrow.svg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "CopyFiles/arrow.svg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\CopyFiles\\arrow.svg"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\CopyFiles\\UserLogo.jpg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\UserLogo.jpg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "CopyFiles/UserLogo.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\CopyFiles\\UserLogo.jpg"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\css\\index.css",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\css\\index.css",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "image/files.svg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\image\\files.svg"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\image\\folder.svg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\folder.svg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "image/folder.svg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\image\\folder.svg"
     },
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\js\\site.js",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\js\\site.js",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux2\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

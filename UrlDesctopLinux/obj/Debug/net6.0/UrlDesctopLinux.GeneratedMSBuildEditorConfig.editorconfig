@@ -9,13 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UrlDesctopLinux
 build_property.RootNamespace = UrlDesctopLinux
-build_property.ProjectDir = D:\project\Шарпы\LinuxProject\UrlDescropLinux2\UrlDesctopLinux\
+build_property.ProjectDir = D:\project\Шарпы\LinuxProject\UrlDescropLinux\UrlDesctopLinux\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\project\Шарпы\LinuxProject\UrlDescropLinux2\UrlDesctopLinux
+build_property.MSBuildProjectDirectory = D:\project\Шарпы\LinuxProject\UrlDescropLinux\UrlDesctopLinux
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/project/Шарпы/LinuxProject/UrlDescropLinux2/UrlDesctopLinux/Views/Desctop/Index.cshtml]
+[D:/project/Шарпы/LinuxProject/UrlDescropLinux/UrlDesctopLinux/Views/Desctop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzY3RvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

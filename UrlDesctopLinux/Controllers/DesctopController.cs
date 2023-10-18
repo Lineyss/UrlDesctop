@@ -22,7 +22,7 @@ namespace UrlDesctopLinux.Controllers
             logger.LogInformation($"Зашли в {DateTime.Now} по пути: {path}");
             return View(new Folder(path));
         }
-        [HttpPost] 
+        [HttpPost]
         public async Task<IActionResult> Index (IFormFile file)
         {
             try
@@ -41,9 +41,9 @@ namespace UrlDesctopLinux.Controllers
                 }
                 else
                 {
-                    path += $"\\{file.FileName}";
+                    path += $"{file.FileName}";
                 }
-                using(var stream = new FileStream(path,FileMode.Create))
+                using(var stream = new FileStream(path, FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }

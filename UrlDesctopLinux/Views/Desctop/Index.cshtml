@@ -22,15 +22,18 @@
             </div>
         </div>
         <div class="headerPanel">
-            <div class="buttonsPanel">
                 @if(@Model.IsFoler)
                 {
-                    <button>Создать папку</button>
-                    <button>Загрузить</button>   
+                    <div class="buttonsPanel">
+                        <button>Создать папку</button>
+                        <form method="post" enctype="multipart/form-data">
+                            <input type="file" name="file" />
+                            <button type="submit">Загрузить</button>
+                        </form>
+                    </div>
                 }
                 <button disabled class="disabledButton">Скачать</button>
                 <button disabled class="disabledButton">Удалить</button>
-            </div>
             <button>Войти</button>
         </div>
     </header>
