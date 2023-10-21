@@ -38,11 +38,39 @@ input.addEventListener("keyup", (e) => {
     }
 });
 
+let listSelectedItem = [];
+
+document.querySelectorAll(".CheckBoxInput").forEach(element => {
+    element.addEventListener("click", () => {
+
+        let parentElement = element.parentElement.parentElement;
+
+        if (element.checked)
+        {
+            listSelectedItem.push(parentElement)
+        }
+        else
+        {
+            for (let i = 0; i < listSelectedItem.length; i++) {
+                if (listSelectedItem[i] == parentElement)
+                {
+                    listSelectedItem.splice(i, 1)[0];
+                }
+            }
+        }
+
+        checkSelectedItem();
+    })
+})
 
 
-function ChangeDisableButton(Disable)
-{
+function checkSelectedItem() {
     document.querySelectorAll(".disabledButton").forEach(element => {
-        element.disabled = Disable;
+        if (listSelectedItem.length > 0) {
+            element.disabled = false;
+        }
+        else {
+            element.disabled = true;
+        }
     })
 }
