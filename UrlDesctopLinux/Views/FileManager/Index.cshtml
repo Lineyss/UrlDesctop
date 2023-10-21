@@ -1,51 +1,58 @@
-﻿﻿@using UrlDesctopLinux
-@using UrlDesctopLinux.Models
+﻿@using UrlDesctopLinux.Models;
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @model Folder
 @{
 }
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="~/css/index.css" />
+    <link type="text/css" rel="stylesheet" href="~/css/popup.css" />
     <title>Файловая система</title>
 </head>
 <body>
+    <div class="popupConteiner Hide">
+        <div class="popupBody">
+            <h1>Введите название папки</h1>
+            <div class="inputBlock">
+                <button class="buttonPopCreateFolder">Создать</button>
+                <input type="text" placeholder="Название папки" maxlength="30" class="inputCreateFolder"/>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="headerPanel">
             <div class="inputBlock">
                 <button class="buttonSearch">Поиск</button>
-                <input type="text" placeholder="Путь" value="@Model.PathFile" class="inputSearch"/>
+                <input type="text" placeholder="Путь" value="@Model.PathFile" class="inputSearch" />
             </div>
         </div>
         <div class="headerPanel">
-                @if(@Model.IsFoler)
-                {
-                    <div class="buttonsPanel">
-                        <button>Создать папку</button>
-                        <form method="post" enctype="multipart/form-data">
-                            <input type="file" name="file" />
-                            <button type="submit">Загрузить</button>
-                        </form>
-                    </div>
-                }
+            @if (@Model.IsFoler)
+            {
+                <div class="buttonsPanel">
+                    <button class="buttonCreateFolder">Создать папку</button>
+                    <button type="submit">Загрузить файл</button>
+                </div>
+            }
+            <div class="buttonsPanel">
                 <button disabled class="disabledButton">Скачать</button>
                 <button disabled class="disabledButton">Удалить</button>
+            </div>
             <button>Войти</button>
         </div>
     </header>
     <div class="conteinerContent">
-            @if(Model.IsFoler)
-            {
-                <div class="body">
+        @if (Model.IsFoler)
+        {
+            <div class="body">
                 @foreach (var element in Model.Files)
                 {
                     <div class="element">
                         <div class="elementBlock">
-                            <input type="checkbox" class="CheckBoxInput"/>
+                            <input type="checkbox" class="CheckBoxInput" />
                         </div>
                         <hr width="1" size="35" />
                         <div class="elementBlock">
@@ -63,21 +70,21 @@
                         </div>
                     </div>
                 }
-                </div>
-            }
-            else if(Model.IsImage)
-            {
-                <div class="body bodyImage">
-                    <img class="imageFile" src="~/CopyFiles/@Model.ImageFileName" />
-                </div>
-            }
-            else
-            {
-                <div class="body">
-                    <p style="width:99%; ">@Model.TextFile</p>
-                </div>
-            }
+            </div>
+        }
+        else if (Model.IsImage)
+        {
+            <div class="body bodyImage">
+                <img class="imageFile" src="~/CopyFiles/@Model.ImageFileName" />
+            </div>
+        }
+        else
+        {
+            <div class="body">
+                <p style="width:99%; ">@Model.TextFile</p>
+            </div>
+        }
     </div>
 </body>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
 </html>

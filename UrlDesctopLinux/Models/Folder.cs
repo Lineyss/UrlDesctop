@@ -114,5 +114,29 @@ namespace UrlDesctopLinux.Models
             FileInfo fileInfo = new FileInfo(PathFile);
             fileInfo.CopyTo(pathToImageDirectory);
         }
+
+        public static void CreateFolder(string path)
+        {
+            if (Directory.Exists(path))
+            {
+                throw new Exception("Папка уже существует");
+            }
+            else
+            {
+                Directory.CreateDirectory(path);
+            }
+        }
+
+        public static void DeleteFileOrDirectory(string path)
+        {
+            if(File.Exists(path))
+            {
+                File.Delete(path);
+            }
+            else
+            {
+                Directory.Delete(path, true);
+            }
+        }
     }
 }

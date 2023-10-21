@@ -52,10 +52,9 @@ namespace UrlDesctopLinux
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                     name: "default",
-                     template: "{*url}",
-                     defaults: new { controller = "Desctop", action = "Index" });
+                routes.MapRoute(name: "DeleteFiles", template: "Delete", defaults: new { controller = "FileManager", action = "Delete" });
+                routes.MapRoute(name: "CreateFolder", template: "CreateFolder/{*url}", defaults: new { controller = "FileManager", action = "CreateFolder" });
+                routes.MapRoute(name: "default",template: "FileManager/{*url}", defaults: new { controller = "FileManager", action = "Index" });
             });
 
             app.Run();

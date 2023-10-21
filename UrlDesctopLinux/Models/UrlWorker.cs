@@ -11,6 +11,24 @@ namespace UrlDesctopLinux.Models
             currentUrl = Url;
         }
 
+        public static string? GetParentDirectory(string Url)
+        {
+            if(!String.IsNullOrWhiteSpace(Url))
+            {
+                return Directory.GetParent(Url)?.Name;
+            }
+            return null;
+        }
+
+        public string? GetParentDirectory()
+        {
+            if(!String.IsNullOrWhiteSpace(currentUrl))
+            {
+                return Directory.GetParent(currentUrl)?.Name;
+            }
+            return null;
+        }
+
         public string GetUrl()
         {
             return Folder.IsUnix ? GetUrlLinux() : GetUrlWindows();
@@ -47,6 +65,7 @@ namespace UrlDesctopLinux.Models
         {
             List<string> arr = currentUrl.Split("/").ToList();
 
+            arr.RemoveAt(0);
             arr.RemoveAt(0);
             arr.RemoveAt(0);
             arr.RemoveAt(0);

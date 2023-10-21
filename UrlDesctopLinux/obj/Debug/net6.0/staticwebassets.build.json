@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lv9LPHvo7gn2mUm1h3fhscgq7c8hnK1vQ0whNavUieU=",
+  "Hash": "d5YRT0zhWMeM2UtwUYlUS5/SWjkWTPQO5+jI5pnv53E=",
   "Source": "UrlDesctopLinux",
   "BasePath": "_content/UrlDesctopLinux",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "UrlDesctopLinux\\wwwroot",
       "Source": "UrlDesctopLinux",
-      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\CopyFiles\\_peredelyvai_yapfiles.ru.gif",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\_peredelyvai_yapfiles.ru.gif",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "CopyFiles/_peredelyvai_yapfiles.ru.gif",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\CopyFiles\\_peredelyvai_yapfiles.ru.gif"
     },
     {
-      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\css\\index.css",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\css\\index.css",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -51,10 +51,27 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\css\\popup.css",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
+      "BasePath": "_content/UrlDesctopLinux",
+      "RelativePath": "css/popup.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\popup.css"
+    },
+    {
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
+      "SourceId": "UrlDesctopLinux",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "image/files.svg",
       "AssetKind": "All",
@@ -68,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\image\\files.svg"
     },
     {
-      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\image\\folder.svg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\folder.svg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "image/folder.svg",
       "AssetKind": "All",
@@ -85,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\image\\folder.svg"
     },
     {
-      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\js\\site.js",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\js\\site.js",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

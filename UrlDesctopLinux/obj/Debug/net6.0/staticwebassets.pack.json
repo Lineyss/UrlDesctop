@@ -1,16 +1,16 @@
 {
   "Files": [
     {
-      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\UserLogo.jpg",
-      "PackagePath": "staticwebassets\\CopyFiles\\UserLogo.jpg"
-    },
-    {
-      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\arrow.svg",
-      "PackagePath": "staticwebassets\\CopyFiles\\arrow.svg"
+      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\_peredelyvai_yapfiles.ru.gif",
+      "PackagePath": "staticwebassets\\CopyFiles\\_peredelyvai_yapfiles.ru.gif"
     },
     {
       "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\css\\index.css",
       "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\css\\popup.css",
+      "PackagePath": "staticwebassets\\css\\popup.css"
     },
     {
       "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\files.svg",

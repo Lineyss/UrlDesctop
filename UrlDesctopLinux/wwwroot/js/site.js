@@ -4,13 +4,26 @@
 // Write your JavaScript code.
 
 
+// Ссылки
+
+let domainName = 'https://localhost:7126/';
+let action = 'FileManager/';
+let mainUrl = domainName + action;
+
 function Href(url) {
-    let a = 'https://localhost:7126/' + url;
-    window.location.href = a;
+    let customUrl = mainUrl + url;
+    window.location.href = customUrl;
+}
+function HrefAction(url, action) {
+    let customUrl = domainName + action + url;
+    window.location.href = customUrl;
 }
 
-document.querySelectorAll(".Files").forEach(element => {
+let Files = document.querySelectorAll(".Files");
+
+Files.forEach(element => {
     element.addEventListener("click", (e) => {
+        console.log(navigator.platform.indexOf("Win"));
         if (navigator.platform.indexOf("Win") != -1)
         {
             e.preventDefault();
@@ -18,6 +31,8 @@ document.querySelectorAll(".Files").forEach(element => {
         }
     });
 })
+
+// Поиск
 
 let button = document.querySelector(".buttonSearch");
 let input = document.querySelector(".inputSearch");
@@ -37,6 +52,8 @@ input.addEventListener("keyup", (e) => {
         button.click();
     }
 });
+
+// Нажатие на элементы
 
 let listSelectedItem = [];
 
@@ -63,9 +80,10 @@ document.querySelectorAll(".CheckBoxInput").forEach(element => {
     })
 })
 
+let disabledButtons = document.querySelectorAll(".disabledButton");
 
 function checkSelectedItem() {
-    document.querySelectorAll(".disabledButton").forEach(element => {
+    disabledButtons.forEach(element => {
         if (listSelectedItem.length > 0) {
             element.disabled = false;
         }
@@ -73,4 +91,73 @@ function checkSelectedItem() {
             element.disabled = true;
         }
     })
+}
+
+// Создать папку и Загрузить файл
+function Post(url, value) {
+    const Http = new XMLHttpRequest();
+    Http.open("Post", url)
+    if (value != null) {
+        Http.setRequestHeader("Content-Type", "application/json");
+        Http.send(JSON.stringify(value));
+    }
+    else {
+        Http.send()
+    }
+
+    if (Http.status == 0) {
+        return true
+    }
+
+    return false;
+}
+
+
+let popupConteiner = document.querySelector(".popupConteiner");
+let inputCreateFolder = document.querySelector(".inputCreateFolder");
+
+/*popupConteiner.addEventListener("click", () => {
+    popupConteiner.classList.add("Hide");
+});*/
+
+document.querySelector(".buttonCreateFolder").addEventListener("click", () => {
+    popupConteiner.classList.remove("Hide");
+});
+
+document.querySelector(".buttonPopCreateFolder").addEventListener("click", () => {
+    console.log(inputCreateFolder.value);
+    let url = input.value + inputCreateFolder.value;
+    if (inputCreateFolder.value.length > 0) {
+        let url = domainName + "CreateFolder/" + input.value + "/" + inputCreateFolder.value;
+        if (Post(url)) {
+            window.location.reload(true);
+        }
+    }
+});
+
+// Удаление и Скачивание
+
+disabledButtons.forEach(element => {
+    element.addEventListener("click", () => {
+        if (element.innerText == "Скачать") {
+            Post(domainName + "CreateFolder", input.value)
+        }
+        else {
+            if (Post(domainName + "Delete", convertArr())) {
+                window.location.reload(true);
+            }
+            
+        }
+    })
+})
+
+function convertArr()
+{
+    let listItem = []
+
+    listSelectedItem.forEach(element => {
+        listItem.push(element.children[4].children[0].getAttribute("href"));
+    })
+
+    return listItem;
 }
