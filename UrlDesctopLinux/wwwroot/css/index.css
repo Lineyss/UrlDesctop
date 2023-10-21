@@ -105,18 +105,15 @@ header > button {
     overflow-x: hidden;
 }
 
-.bodyImage
-{
-    display:flex;
+.bodyImage {
+    display: flex;
 }
 
-.body::-webkit-scrollbar 
-{
+.body::-webkit-scrollbar {
     width: 10px;
 }
 
-.body::-webkit-scrollbar-track 
-{
+.body::-webkit-scrollbar-track {
     border-radius: 10px;
     margin-top: 27px;
     margin-bottom: 27px;
@@ -153,25 +150,25 @@ header > button {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y:hidden;
-    overflow-x:visible;
+    overflow-y: hidden;
+    overflow-x: visible;
 }
 
-.path::-webkit-scrollbar {
-    height:10px;
-    width: 10px;
-}
+    .path::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+    }
 
-.path::-webkit-scrollbar-track {
-    border-radius: 10px;
-    margin-top: 27px;
-    margin-bottom: 27px;
-}
+    .path::-webkit-scrollbar-track {
+        border-radius: 10px;
+        margin-top: 27px;
+        margin-bottom: 27px;
+    }
 
-.path::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #8a2be2;
-}
+    .path::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #8a2be2;
+    }
 
 .description {
     height: 100%;
@@ -185,18 +182,17 @@ header > button {
 a {
     color: black;
     font-size: 20px;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
-a:hover {
-    color: #007bff;
-}
+    a:hover {
+        color: #007bff;
+    }
 
-.imageFile
-{
-    max-width:100% !important;
-    max-height:100% !important;
-    width:auto !important;
-    height:auto !important;
-    margin:0 auto;
+.imageFile {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto;
 }

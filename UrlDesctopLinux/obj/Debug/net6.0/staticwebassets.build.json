@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pV6uiSAid335z458sMwDDWbpQa5agmlsgKZQW9fEX6w=",
+  "Hash": "Lv9LPHvo7gn2mUm1h3fhscgq7c8hnK1vQ0whNavUieU=",
   "Source": "UrlDesctopLinux",
   "BasePath": "_content/UrlDesctopLinux",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\CopyFiles\\UserLogo.jpg",
+      "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\CopyFiles\\_peredelyvai_yapfiles.ru.gif",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
-      "RelativePath": "CopyFiles/UserLogo.jpg",
+      "RelativePath": "CopyFiles/_peredelyvai_yapfiles.ru.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\CopyFiles\\UserLogo.jpg"
+      "OriginalItemSpec": "wwwroot\\CopyFiles\\_peredelyvai_yapfiles.ru.gif"
     },
     {
       "Identity": "D:\\Project\\c шарп\\UrlDesctop\\UrlDesctopLinux\\wwwroot\\css\\index.css",
