@@ -96,7 +96,8 @@ function checkSelectedItem() {
 // Создать папку и Загрузить файл
 function Post(url, value) {
     const Http = new XMLHttpRequest();
-    Http.open("Post", url)
+    console.log(url);
+    Http.open("POST", url, false)
     if (value != null) {
         Http.setRequestHeader("Content-Type", "application/json");
         Http.send(JSON.stringify(value));
@@ -117,6 +118,7 @@ function Post(url, value) {
 
 let popupConteiner = document.querySelector(".popupConteiner");
 let inputCreateFolder = document.querySelector(".inputCreateFolder");
+let inputUploadFiles = document.querySelector(".inputUploadFiles");
 
 popupConteiner.addEventListener("click", (e) => {
     if (inputCreateFolder != document.activeElement && e.target.tagName != 'BUTTON') {
@@ -129,15 +131,22 @@ document.querySelector(".buttonCreateFolder").addEventListener("click", () => {
 });
 
 document.querySelector(".buttonPopCreateFolder").addEventListener("click", () => {
-    console.log(inputCreateFolder.value);
     let url = input.value + inputCreateFolder.value;
     if (inputCreateFolder.value.length > 0) {
-        let url = domainName + "CreateFolder/" + input.value + "/" + inputCreateFolder.value;
+        url = domainName + "CreateFolder/" + input.value + "/" + inputCreateFolder.value;
+
         if (Post(url)) {
-            location.reload();
+            window.location.reload(true);
         }
     }
 });
+
+document.querySelector(".buttonUploadFiles").addEventListener("click", () => {
+    console.log(1)
+    inputUploadFiles.click();
+})
+
+buttonUploadFiles.addEventL
 
 // Удаление и Скачивание
 
@@ -147,7 +156,9 @@ disabledButtons.forEach(element => {
 
         }
         else {
-            Post(domainName + "Delete", convertArr());
+            if (Post(domainName + "Delete", convertArr())) {
+                window.location.reload(true);
+            }
         }
     })
 })
