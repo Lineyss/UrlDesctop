@@ -59,7 +59,7 @@ namespace UrlDesctopLinux.Controllers
             }
         }
         [HttpPost]
-        public IActionResult CreateFolder()
+        public IResult CreateFolder()
         {
             try
             {
@@ -69,17 +69,17 @@ namespace UrlDesctopLinux.Controllers
 
                 Folder.CreateFolder(urlWorker.GetUrl());
 
-                return Ok();
+                return Results.Ok();
             }
             catch (Exception e)
             {
-                return NotFound(e.Message);
+                return Results.NotFound(e.Message);
             }
 
         }
 
         [HttpPost]
-        public IActionResult Delete([FromBody] List<string> listSelectedItem)
+        public IResult Delete([FromBody] List<string> listSelectedItem)
         {
             string parentDirectory = "";
             try
@@ -87,13 +87,14 @@ namespace UrlDesctopLinux.Controllers
                 foreach (var element in listSelectedItem)
                 {
                     parentDirectory = UrlWorker.GetParentDirectory(element);
-                    Folder.DeleteFileOrDirectory(element);
+                    Folder.DeleteFileOrDirectory(element);  
                 }
-                return Ok();
+
+                return Results.Ok();
             }
             catch(Exception e)
             {
-                return NotFound(e.Message);
+                return Results.NotFound(e.Message);
             }
         }
     }

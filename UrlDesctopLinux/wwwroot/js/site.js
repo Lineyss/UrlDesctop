@@ -105,7 +105,9 @@ function Post(url, value) {
         Http.send()
     }
 
-    if (Http.status == 0) {
+    console.log(Http.status);
+
+    if (Http.status == 200) {
         return true
     }
 
@@ -116,9 +118,11 @@ function Post(url, value) {
 let popupConteiner = document.querySelector(".popupConteiner");
 let inputCreateFolder = document.querySelector(".inputCreateFolder");
 
-/*popupConteiner.addEventListener("click", () => {
-    popupConteiner.classList.add("Hide");
-});*/
+popupConteiner.addEventListener("click", (e) => {
+    if (inputCreateFolder != document.activeElement && e.target.tagName != 'BUTTON') {
+        popupConteiner.classList.add("Hide");
+    }
+});
 
 document.querySelector(".buttonCreateFolder").addEventListener("click", () => {
     popupConteiner.classList.remove("Hide");
@@ -130,7 +134,7 @@ document.querySelector(".buttonPopCreateFolder").addEventListener("click", () =>
     if (inputCreateFolder.value.length > 0) {
         let url = domainName + "CreateFolder/" + input.value + "/" + inputCreateFolder.value;
         if (Post(url)) {
-            window.location.reload(true);
+            location.reload();
         }
     }
 });
@@ -140,13 +144,10 @@ document.querySelector(".buttonPopCreateFolder").addEventListener("click", () =>
 disabledButtons.forEach(element => {
     element.addEventListener("click", () => {
         if (element.innerText == "Скачать") {
-            Post(domainName + "CreateFolder", input.value)
+
         }
         else {
-            if (Post(domainName + "Delete", convertArr())) {
-                window.location.reload(true);
-            }
-            
+            Post(domainName + "Delete", convertArr());
         }
     })
 })
