@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HYww8WsT1diR87NAOO7Mqa+k+/Lkp8P1tnrim+tT1nk=",
+  "Hash": "7fdW6XMTq0AacyNVl2fp039LH/PPfl8yWoMVWcq8A/E=",
   "Source": "UrlDesctopLinux",
   "BasePath": "_content/UrlDesctopLinux",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\folder.svg"
+    },
+    {
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\Logo.svg",
+      "SourceId": "UrlDesctopLinux",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
+      "BasePath": "_content/UrlDesctopLinux",
+      "RelativePath": "image/Logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Logo.svg"
     },
     {
       "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\js\\site.js",

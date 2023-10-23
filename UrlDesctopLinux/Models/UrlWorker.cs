@@ -36,8 +36,12 @@ namespace UrlDesctopLinux.Models
 
         private string GetUrlWindows()
         {
-            var array = RemoveUslessWords();
-            if (array[0] == "")
+            List<string> array = RemoveUslessWords();
+            if (array.Count == 0)
+            {
+                array.Add("C:/");
+            }
+            else if (array[0] == "")
             {
                 array[0] = "C:/";
             }

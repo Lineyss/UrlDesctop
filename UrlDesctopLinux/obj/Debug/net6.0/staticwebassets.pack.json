@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\popup.css"
     },
     {
+      "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\Logo.svg",
+      "PackagePath": "staticwebassets\\image\\Logo.svg"
+    },
+    {
       "Id": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
       "PackagePath": "staticwebassets\\image\\files.svg"
     },

@@ -146,7 +146,6 @@ document.querySelector(".buttonUploadFiles").addEventListener("click", () => {
     inputUploadFiles.click();
 })
 
-buttonUploadFiles.addEventL
 
 // Удаление и Скачивание
 
