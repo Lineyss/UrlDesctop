@@ -53,6 +53,7 @@ namespace UrlDesctopLinux
             app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "DeleteFiles", template: "Delete", defaults: new { controller = "FileManager", action = "Delete" });
+                routes.MapRoute(name: "DownloadFiles", template: "Download", defaults: new {controller = "FileManager", action="Download" });
                 routes.MapRoute(name: "CreateFolder", template: "CreateFolder/{*url}", defaults: new { controller = "FileManager", action = "CreateFolder" });
                 routes.MapRoute(name: "default",template: "FileManager/{*url}", defaults: new { controller = "FileManager", action = "Index" });
             });

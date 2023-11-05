@@ -5,16 +5,21 @@ using iTextSharp.text.pdf.parser;
 
 namespace UrlDesctopLinux.Models
 {
+    // Класс для чтения файлов
     public class FileReader
     {
+        // Путь до файла
         private string PathFile;
         public FileReader(string pathFile)
         {
+            // Инициализация пути
             PathFile = pathFile;
         }
 
+        // Метод для чтения файла
         public string Read()
         {
+            // Получаю расширение файла
             string extends = System.IO.Path.GetExtension(PathFile).ToLower();
 
             if (extends == ".txt" || extends == ".css" || extends == ".html" || extends == ".ini" || extends == ".xml" || extends == ".js")
@@ -35,6 +40,7 @@ namespace UrlDesctopLinux.Models
             }
         }
 
+        // Метод для чтения основных текстовых файлов (по тиму txt, html и все такое)
         private string MainReadingFile()
         {
             string Text = "";
@@ -50,6 +56,7 @@ namespace UrlDesctopLinux.Models
             return Text;
         }
         
+        // Мтеетод для чтения word файлов
         private string ReadingWordFile()
         {
             string Text = "";
@@ -70,6 +77,7 @@ namespace UrlDesctopLinux.Models
             return Text;
         }
 
+        // Метод для чтения PDF файлов
         private string ReadingPDF()
         {
             PdfReader reader = new PdfReader(PathFile);

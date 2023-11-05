@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7fdW6XMTq0AacyNVl2fp039LH/PPfl8yWoMVWcq8A/E=",
+  "Hash": "r1MT1NCFOBNySsDkcwm36ApEltCG1emiqurS3ORA+kw=",
   "Source": "UrlDesctopLinux",
   "BasePath": "_content/UrlDesctopLinux",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\UserLogo.jpg",
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\CopyFiles\\02076514-4e92-469a-b382-eb5768db3a21.gif",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
       "BasePath": "_content/UrlDesctopLinux",
-      "RelativePath": "CopyFiles/UserLogo.jpg",
+      "RelativePath": "CopyFiles/02076514-4e92-469a-b382-eb5768db3a21.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\CopyFiles\\UserLogo.jpg"
+      "OriginalItemSpec": "wwwroot\\CopyFiles\\02076514-4e92-469a-b382-eb5768db3a21.gif"
     },
     {
       "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\css\\index.css",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\popup.css"
     },
     {
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\Downloads\\MyZip.zip",
+      "SourceId": "UrlDesctopLinux",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
+      "BasePath": "_content/UrlDesctopLinux",
+      "RelativePath": "Downloads/MyZip.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Downloads\\MyZip.zip"
+    },
+    {
       "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\files.svg",
       "SourceId": "UrlDesctopLinux",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\folder.svg"
+    },
+    {
+      "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\load.gif",
+      "SourceId": "UrlDesctopLinux",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\",
+      "BasePath": "_content/UrlDesctopLinux",
+      "RelativePath": "image/load.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\load.gif"
     },
     {
       "Identity": "D:\\project\\Шарпы\\LinuxProject\\UrlDescropLinux\\UrlDesctopLinux\\wwwroot\\image\\Logo.svg",

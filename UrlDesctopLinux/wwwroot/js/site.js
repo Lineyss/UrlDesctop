@@ -106,8 +106,6 @@ function Post(url, value) {
         Http.send()
     }
 
-    console.log(Http.status);
-
     if (Http.status == 200) {
         return true
     }
@@ -149,18 +147,59 @@ document.querySelector(".buttonUploadFiles").addEventListener("click", () => {
 
 // Удаление и Скачивание
 
+let poputLoad = document.querySelector(".load");
+
+
 disabledButtons.forEach(element => {
     element.addEventListener("click", () => {
         if (element.innerText == "Скачать") {
-
+            poputLoad.classList.remove("Hide");
+            downloadZip(domainName + "Download")
         }
         else {
-            if (Post(domainName + "Delete", convertArr())) {
-                window.location.reload(true);
-            }
+            window.location.reload(
+                Post(domainName + "Delete", convertArr())
+            );
         }
     })
 })
+
+function downloadZip(url) {
+    data = convertArr()
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.responseType = "blob";
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    // Конвертируем массив в JSON формат
+    var listSelectedItem = JSON.stringify(data);
+
+    console.log(listSelectedItem)
+    console.log(url)
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var blob = new Blob([xhr.response], { type: 'application/zip' });
+            var url = window.URL.createObjectURL(blob);
+
+            // Создаем ссылку на скачивание архива
+            var link = document.createElement('a');
+            link.href = url;
+            link.download = 'archive.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+
+            poputLoad.classList.add("Hide");
+        }
+    };
+
+
+
+    xhr.send(listSelectedItem);
+}
 
 function convertArr()
 {

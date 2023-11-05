@@ -138,3 +138,4 @@ D:\project\Шарпы\LinuxProject\UrlDescropLinux\UrlDesctopLinux\obj\Debug\net
 D:\Project\c шарп\UrlDesctop\UrlDesctopLinux\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 D:\Project\c шарп\UrlDesctop\UrlDesctopLinux\bin\Debug\net6.0\itextsharp.dll
 D:\Project\c шарп\UrlDesctop\UrlDesctopLinux\bin\Debug\net6.0\Microsoft.Office.Interop.Word.dll
+D:\project\Шарпы\LinuxProject\UrlDescropLinux\UrlDesctopLinux\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll

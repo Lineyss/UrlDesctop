@@ -4,13 +4,12 @@
 @model Folder
 @{
 }
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="~/css/index.css" />
     <link type="text/css" rel="stylesheet" href="~/css/popup.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="~/image/Logo.svg" />
     <title>Файловая система</title>
 </head>
@@ -21,6 +20,27 @@
             <div class="inputBlock">
                 <button class="buttonPopCreateFolder">Создать</button>
                 <input type="text" placeholder="Название папки" maxlength="30" class="inputCreateFolder" autofocus/>
+            </div>
+        </div>
+    </div>
+    <div class="popupConteiner load Hide">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -37,7 +57,7 @@
                 <div class="buttonsPanel">
                     <button class="buttonCreateFolder">Создать папку</button>
                     <button class="buttonUploadFiles"  type="submit">Загрузить файл</button>
-                    <input type="file" name="file" multiple="true" style="display:none" class="inputUploadFiles"/>
+                    <input type="file" name="file" multiple style="display:none" class="inputUploadFiles"/>
                 </div>
             }
             <div class="buttonsPanel">
